@@ -18,6 +18,8 @@ git submodule add https://github.com/kmdkuk/DNS-for-ndnSIM.git extensions/dns
 ./waf
 
 # dns-example.ccをscenariosに用意(このリポジトリにはない)
+# 大元のdns-exampleがそのまま使える
+# https://github.com/awaki75/DNS-for-NS3/blob/master/examples/dns-example.cc
 
 # dns-exampleを実行
 ./waf --run scratch/dns-example --vis
