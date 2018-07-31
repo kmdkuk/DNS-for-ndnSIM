@@ -2,7 +2,7 @@
 
 ## 目的
 
-[janakawest/DNS-for-NS3](https://github.com/janakawest/DNS-for-NS3) を動かす
+[janakawest/DNS-for-NS3](https://github.com/janakawest/DNS-for-NS3) をndnSIMで動かす
 
 
 ## 導入方法
