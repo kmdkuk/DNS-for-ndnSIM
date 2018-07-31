@@ -8,28 +8,19 @@
 ## 導入方法
 
 ```sh
-# 必要なパッケージをインストール
-sudo apt-get install build-essential python-dev python-pygccxml python-pygoocanvas python-pygraphviz
+# ndnSIM推奨のシナリオ作成できるところまでやる
+cd <your-scenario-dir>
 
-# ns-3の圧縮ファイルをダウンロード
-wget https://www.nsnam.org/release/ns-allinone-3.26.tar.bz2
-
-# 圧縮ファイルを展開
-tar xf ns-allinone-3.26.tar.bz2
-
-cd ns-allinone-3.26
-
-# このリポジトリをclone
-git clone https://github.com/awaki75/DNS-for-NS3.git ns-3.26/src/dns
+# このリポジトリをextensions以下にサブモジュールとして加える
+git submodule add https://github.com/kmdkuk/DNS-for-ndnSIM.git extensions/dns
 
 # ビルド
-./build.py
+./waf
 
-cd ns-3.26
-
-# examplesの中はパスが通っていないのでdns-example.ccをscratchにコピー
-cp src/dns/examples/dns-example.cc scratch
+# dns-example.ccをscenariosに用意(このリポジトリにはない)
 
 # dns-exampleを実行
 ./waf --run scratch/dns-example --vis
 ```
+
+まだ出来てないけど頑張ってできるようにします。
