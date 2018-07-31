@@ -24,5 +24,3 @@ git submodule add https://github.com/kmdkuk/DNS-for-ndnSIM.git extensions/dns
 # dns-exampleを実行
 ./waf --run scratch/dns-example --vis
 ```
-
-まだ出来てないけど頑張ってできるようにします。
